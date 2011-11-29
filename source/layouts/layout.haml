@@ -44,13 +44,23 @@
         %p
           Hello, my name is Penguinoh, a stuffed animal from San Diego, California. 
           I'm traveling around on the JetBlue flying passes and doing another large around-the-world trip.
+        %aside
+          .addthis_toolbox.addthis_default_style
+            %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
+            %a.addthis_button_tweet
+            %a.addthis_button_google_plusone{"g:plusone:size" => "medium"}
+            %a.addthis_counter.addthis_pill_style
+
 
       #main-content{:role => "main"}
     
         = yield
 
       %footer
-        %p &copy; 2011 Penguinoh Waddles
+        %p
+          &copy; 2011 Penguinoh Waddles. A silly 
+          %a{:href => "http://benhughes.name"} Ben Hughes
+          production.
         
     -# JavaScript at the bottom for fast page loading
 
@@ -66,6 +76,8 @@
     %script{:src => "/javascripts/libs/jquery.cycle.js"}
     %script{:src => "/javascripts/libs/jquery.thickbox.js"}
     %script{:src => "/javascripts/libs/jquery.easing.js"}
+
+    %script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed4674833d638d4", :type => "text/javascript"}
 
     -# Change UA-XXXXX-X to be your site's ID
     :javascript
