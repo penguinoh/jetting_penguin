@@ -1,3 +1,8 @@
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+require 'rvm/capistrano'
+
+require "bundler/capistrano"
+
 set :application, "jetting_penguin"
 set :repository, "git@github.com:penguinoh/#{application}"
 
