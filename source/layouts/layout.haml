@@ -44,12 +44,19 @@
         %p
           Hello, my name is Penguinoh, a stuffed animal from San Diego, California. 
           I'm traveling around on the JetBlue flying passes and doing another large around-the-world trip.
-        %aside
+        %section#share
           .addthis_toolbox.addthis_default_style
-            %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
-            %a.addthis_button_tweet
-            %a.addthis_button_google_plusone{"g:plusone:size" => "medium"}
-            %a.addthis_counter.addthis_pill_style
+            %a.addthis_button_preferred_1
+            %a.addthis_button_preferred_2
+            %a.addthis_button_preferred_3
+            %a.addthis_button_preferred_4
+            %a.addthis_button_compact
+            %a.addthis_counter.addthis_bubble_style
+        %aside#social
+          %a{:href => "http://www.facebook.com/lolpenguinoh"}
+            %img{:src => "/images/social/facebook.png"}
+          %a{:href => "http://www.twitter.com/penguinoh"}
+            %img{:src => "/images/social/twitter.png"}
 
 
       #main-content{:role => "main"}
