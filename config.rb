@@ -2,12 +2,9 @@
 # Compass
 ###
 
-# 960.gs grids in Compass
-# First: gem install compass-960-plugin
-# require 'ninesixty'
-
 # Susy grids in Compass
 # First: gem install compass-susy-plugin
+# require 'susy'
 
 # Change Compass configuration
 # compass_config do |config|
@@ -56,17 +53,11 @@
 ###
 
 # Methods defined in the helpers block are available in templates
-helpers do
-  # Calculate the years for a copyright
-  def copyright_years(start_year)
-    end_year = Date.today.year
-    if start_year == end_year
-      start_year.to_s
-    else
-      start_year.to_s + '-' + end_year.to_s
-    end
-  end
-end
+# helpers do
+#   def some_helper
+#     "Helping"
+#   end
+# end
 
 # Change the CSS directory
 # set :css_dir, "alternative_css_directory"
