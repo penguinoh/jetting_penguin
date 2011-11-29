@@ -17,8 +17,8 @@
     -# Pull in the page title
     %title= @title
   
-    %meta{:name => "description", :content => ""}
-    %meta{:name => "author", :content => ""}
+    %meta{:name => "description", :content => "Jetting Penguin - World Travels of Penguinoh the Stuffed Penguin"}
+    %meta{:name => "author", :content => "Penguinoh Waddles"}
 
     -# Mobile viewport optimized: j.mp/bplateviewport
     -# * disabled because I think the zoomed-in behavior is sucks -- @nathos *
@@ -37,16 +37,20 @@
     -# For optimal performance, use a custom Modernizr build: www.modernizr.com/download/
     %script{:src => "/javascripts/libs/modernizr-2.0.6.min.js"}
 
-  %body{:class => "#{@bodyclass}"}
+  %body{:class => "#{@body_class}"}
     .container
-      %header 
-        %h1= @title
+      %header
+        %h1 Penguinoh Waddles - The Jetting Penguin
+        %p
+          Hello, my name is Penguinoh, a stuffed animal from San Diego, California. 
+          I'm traveling around on the JetBlue flying passes and doing another large around-the-world trip.
+
       #main-content{:role => "main"}
     
         = yield
 
       %footer
-        %p &copy; #{copyright_years(2011)} MiddlemanBoostrapUser
+        %p &copy; #{copyright_years(2011)} Penguinoh Waddles
         
     -# JavaScript at the bottom for fast page loading
 
@@ -59,9 +63,13 @@
     %script{:src => "/javascripts/plugins.js"}
     %script{:src => "/javascripts/script.js"}
 
+    %script{:src => "/javascripts/libs/jquery.cycle.js"}
+    %script{:src => "/javascripts/libs/jquery.thickbox.js"}
+    %script{:src => "/javascripts/libs/jquery.easing.js"}
+
     -# Change UA-XXXXX-X to be your site's ID
     :javascript
-      window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+      window._gaq = [['_setAccount','UA-3202633-15'],['_trackPageview'],['_trackPageLoadTime']];
       Modernizr.load({
         load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
       });

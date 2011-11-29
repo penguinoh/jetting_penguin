@@ -13,6 +13,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-susy-plugin (0.9)
+      compass (>= 0.11.1)
     daemons (1.1.4)
     em-websocket (0.3.5)
       addressable (>= 2.1.1)
@@ -102,4 +104,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass-susy-plugin
   middleman (~> 2.0.13)
