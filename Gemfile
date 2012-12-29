@@ -1,4 +1,6 @@
 source :rubygems
 
-gem "middleman", "~>2.0.13"
-gem "compass-susy-plugin"
+gem "middleman", "~> 3.0.6"
+gem "susy", "~>1.0.5"
+
+gem "middleman-deploy"
